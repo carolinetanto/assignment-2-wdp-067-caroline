@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesi 5 - Assignment 2</title>
+    <link rel="stylesheet" href="sesi5.css">
+</head>
+<body>
+    <div class="bio-card big-container">
+        <div class="left big-item container">
+            <div class="pic item">
+                <img src="dev-icon.jpg" alt="" srcset="">
+            </div>
+            <div class="not-pic item">
+                <h1 id="namaOutput">Nama anda</h1>
+                <p id="roleOutput">Front End Designer</p>
+                <a id="output" href="#" style="background-color: blue; color: white;">Edit</a>
+                <a id="output" href="#" style="background-color: none; border: 1.5px solid green; color: green;">Resume</a>
+            </div>
+        </div>
+        <div class="right big-item container">
+            <div class="label item">
+                <p>Availability</p>
+                <p>Usia</p>
+                <p>Lokasi</p>
+                <p>Pengalaman</p>
+                <p>Email</p>
+            </div>
+            <div class="answer item">
+                <p id="availabilityOutput">Full Time</p>
+                <p id="usiaOutput">19</p>
+                <p id="lokasiOutput">Jakarta</p>
+                <p id="yearsOutput">2</p>
+                <p id="emailOutput">email@gmail.com</p>
+            </div>
+        </div>
+        <div class="form">
+            <form id="form-profile">
+                <label for="namaInput">Nama</label>
+                <input type="text" id="namaInput" name="nama"><br>
+
+                <label for="roleInput">Role</label>
+                <input type="text" id="roleInput" name="role"><br>
+
+                <label for="availabilityInput">Availability</label>
+                <input type="text" id="availabilityInput" name="availability"><br>
+
+                <label for="usiaInput">Age</label>
+                <input type="number" id="usiaInput" name="usia"><br>
+
+                <label for="lokasiInput">Lokasi</label>
+                <input type="text" id="lokasiInput" name="lokasi"><br>
+
+                <label for="yearsInput">Years Experience</label>
+                <input type="number" id="yearsInput" name="years"><br>
+
+                <label for="emailInput">Email</label>
+                <input type="email" id="emailInput" name="email"><br>
+
+                <input type="submit" name="submit" style="padding: 10px; background-color: green; color: white; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"><br>
+            </form>
+        </div>
+    </div>
+    <script src="sesi5.js"></script>
+</body>
+</html>

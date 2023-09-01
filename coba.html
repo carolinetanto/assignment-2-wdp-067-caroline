@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Update Profile</title>
+  <script>
+    function updateProfile(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Retrieve form input values
+      var nameInput = document.getElementById("nameInput");
+      var emailInput = document.getElementById("emailInput");
+      var bioInput = document.getElementById("bioInput");
+
+      // Retrieve profile output elements
+      var nameOutput = document.getElementById("nameOutput");
+      var emailOutput = document.getElementById("emailOutput");
+      var bioOutput = document.getElementById("bioOutput");
+
+      // Update profile information
+      nameOutput.textContent = "Name: " + nameInput.value;
+      emailOutput.textContent = "Email: " + emailInput.value;
+      bioOutput.textContent = "Bio: " + bioInput.value;
+
+      // Clear input fields after submission
+      nameInput.value = "";
+      emailInput.value = "";
+      bioInput.value = "";
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Update Profile</h1>
+  <h2>Profile Information</h2>
+  <p id="nameOutput"></p>
+  <p id="emailOutput"></p>
+  <p id="bioOutput"></p>
+  <form id="profileForm">
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" name="nama" required />
+
+    <label for="emailInput">Email:</label>
+    <input type="email" id="emailInput" name="email" required />
+
+    <label for="bioInput">Bio:</label>
+    <textarea id="bioInput" name="bio"></textarea>
+
+    <button type="submit" onclick="updateProfile(event)">Update</button>
+  </form>
+
+  
+</body>
+
+</html>

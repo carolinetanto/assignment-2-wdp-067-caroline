@@ -1,0 +1,58 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: aliceblue;
+    padding: 20px;
+}
+.container {
+    text-align: left;
+    display: flex;
+    align-items: start;
+}
+.item {
+    display: inline-block;
+    margin: 10px;
+}
+.bio-card {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+.bio-card .left {
+    margin-right: 300px;
+}
+.bio-card .left .pic img {
+    border-radius: 50%;
+    height: 300px;
+    width: auto;
+}
+.bio-card .left .not-pic p {
+    margin-bottom: 80px;
+}
+.bio-card .left .not-pic a {
+    padding: 20px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.bio-card .right .label p {
+    font-weight: 700;
+}
+.big-container {
+    text-align: start;
+}
+.big-item {
+    display: inline-block;
+}
+.form {
+    margin: 50px 20px;
+}
+input, label {
+    display: block;
+    width: 100%;
+}
+.form form label {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
